@@ -400,7 +400,7 @@ compile.smile, compile.mrbean" />
     <!-- Generic distribution target builds the structure we copy over
          to the website.
       --> 
-    <target name="dist" depends="compile.all,jars,javadoc"
+    <target name="dist" depends="compile.all,jars"
     >
        <!-- First, let's copy the binary jars to dist -->
        <copy todir="${dir.dist}">
