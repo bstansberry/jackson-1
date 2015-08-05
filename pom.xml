@@ -112,11 +112,11 @@
       </plugins>
     </pluginManagement>
     <plugins>
-<!--
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>build-helper-maven-plugin</artifactId>
         <executions>
+<!--
           <execution>
             <id>regex-version-property</id>
             <goals>
@@ -130,6 +130,7 @@
               <failIfNoMatch>true</failIfNoMatch>
             </configuration>
           </execution>
+-->
           <execution>
             <id>regex-property</id>
             <goals>
@@ -145,7 +146,6 @@
           </execution>
         </executions>
       </plugin>
--->
       <plugin>
         <artifactId>maven-dependency-plugin</artifactId>
         <executions>
