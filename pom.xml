@@ -260,6 +260,7 @@
                 <property name="ant.build.javac.target" value="1.6"></property>
                 <property name="IMPL_VERSION" value="${project.version}"></property>
                 <ant antfile="ant/build-jarjar-asm.xml" dir="${project.basedir}" target="repackage-asm" inheritAll="true"></ant>
+                <ant antfile="build.xml" dir="${project.basedir}" target="javadoc" inheritAll="true"></ant>
                 <ant antfile="build.xml" dir="${project.basedir}" target="dist" inheritAll="true"></ant>
               </target>
             </configuration>
