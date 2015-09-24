@@ -41,6 +41,7 @@
     <version.org.codehaus.groovy>1.7.4</version.org.codehaus.groovy>
     <version.com.google.collections>1.0</version.com.google.collections>
     <version.com.googlecode.jarjar>1.1</version.com.googlecode.jarjar>
+    <version.org.hibernate.hibernate-cglib-repack>2.1_3</version.org.hibernate.hibernate-cglib-repack>
     <version.org.jboss.spec.javax.ws.rs>1.0.1.Final</version.org.jboss.spec.javax.ws.rs>
     <version.jsr311-api>1.1</version.jsr311-api>
     <version.joda-time>1.5.2</version.joda-time>
@@ -167,6 +168,13 @@
                   <version>${version.com.googlecode.jarjar}</version>
                   <destFileName>jarjar-1.0.jar</destFileName>
                   <outputDirectory>${project.basedir}/lib/ext/jarjar</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>org.hibernate</groupId>
+                  <artifactId>hibernate-cglib-repack</artifactId>
+                  <version>${version.org.hibernate.hibernate-cglib-repack}</version>
+                  <destFileName>hibernate-cglib-repack-nodep-2.1_3-SNAPSHOT.jar</destFileName>
+                  <outputDirectory>${project.basedir}/lib/ext/hibernate</outputDirectory>
                 </artifactItem>
                 <artifactItem>
                   <groupId>org.jboss.spec.javax.ws.rs</groupId>
