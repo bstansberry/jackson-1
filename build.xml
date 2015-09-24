@@ -158,7 +158,6 @@ compile.smile, compile.mrbean" />
 
     <target name="compile.core" depends="prepare">
         <javac srcdir="${dir.src.java.core}" destdir="${dir.build.classes.core}"
-            source="1.5" target="1.5"
             debug="true" includeantruntime="false"
         >
             <compilerarg value="-Xlint:unchecked" />
@@ -171,7 +170,6 @@ compile.smile, compile.mrbean" />
 
     <target name="compile.mapper" depends="compile.core">
         <javac srcdir="${dir.src.java.mapper}" destdir="${dir.build.classes.mapper}"
-            source="1.5" target="1.5"
             debug="true" includeantruntime="false"
         >
             <compilerarg value="-Xlint:unchecked" />
@@ -192,7 +190,6 @@ compile.smile, compile.mrbean" />
 
     <target name="compile.xc" depends="compile.mapper">
         <javac srcdir="${dir.src.java.xc}" destdir="${dir.build.classes.xc}"
-            source="1.5" target="1.5"
             debug="true" includeantruntime="false"
         >
             <compilerarg value="-Xlint:unchecked" />
@@ -215,7 +212,6 @@ compile.smile, compile.mrbean" />
 
     <target name="compile.jaxrs" depends="compile.mapper,compile.xc">
         <javac srcdir="${dir.src.java.jaxrs}" destdir="${dir.build.classes.jaxrs}"
-            source="1.5" target="1.5"
             debug="true" includeantruntime="false"
         >
             <compilerarg value="-Xlint:unchecked" />
@@ -238,7 +234,6 @@ compile.smile, compile.mrbean" />
 
     <target name="compile.smile" depends="compile.core">
         <javac srcdir="${dir.src.java.smile}" destdir="${dir.build.classes.smile}"
-            source="1.5" target="1.5"
             debug="true" includeantruntime="false"
         >
             <compilerarg value="-Xlint:unchecked" />
@@ -255,7 +250,6 @@ compile.smile, compile.mrbean" />
 
     <target name="compile.mrbean" depends="compile.core">
         <javac srcdir="${dir.src.java.mrbean}" destdir="${dir.build.classes.mrbean}"
-            source="1.5" target="1.5"
             debug="true" includeantruntime="false"
         >
             <compilerarg value="-Xlint:unchecked" />
@@ -282,7 +276,6 @@ compile.smile, compile.mrbean" />
 
     <target name="compile.extra" depends="compile.main">
         <javac destdir="${dir.build.classes.extra}"
-            source="1.5" target="1.5"
             debug="true" includeantruntime="false"
         >
             <compilerarg value="-Xlint:unchecked" />
