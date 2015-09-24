@@ -123,6 +123,9 @@ org.codehaus.jackson.map.ext
           <attribute name="Implementation-Title"   value="${IMPL_TITLE_MAPPER}"/>
           <attribute name="Implementation-Version" value="${IMPL_VERSION}"/>
           <attribute name="Implementation-Vendor"  value="${IMPL_VENDOR}"/>
+          <attribute name="Specification-Title"    value="${IMPL_TITLE_MAPPER}"/>
+          <attribute name="Specification-Version"  value="${IMPL_VERSION}"/>
+          <attribute name="Specification-Vendor"   value="${IMPL_VENDOR}"/>
         </manifest>
       </osgiJar>
     </target> 
@@ -224,6 +227,9 @@ org.codehaus.jackson.map.ext
           <attribute name="Implementation-Title"   value="${IMPL_TITLE_MAPPER}"/>
           <attribute name="Implementation-Version" value="${IMPL_VERSION}"/>
           <attribute name="Implementation-Vendor"  value="${IMPL_VENDOR}"/>
+          <attribute name="Specification-Title"    value="${IMPL_TITLE_MAPPER}"/>
+          <attribute name="Specification-Version"  value="${IMPL_VERSION}"/>
+          <attribute name="Specification-Vendor"   value="${IMPL_VENDOR}"/>
         </manifest>
       </osgiJar>
     </target> 
@@ -277,6 +283,9 @@ org.codehaus.jackson.jaxrs;version=${IMPL_VERSION}"
           <attribute name="Implementation-Title"   value="${IMPL_TITLE_JAXRS}"/>
           <attribute name="Implementation-Version" value="${IMPL_VERSION}"/>
           <attribute name="Implementation-Vendor"  value="${IMPL_VENDOR}"/>
+          <attribute name="Specification-Title"    value="${IMPL_TITLE_JAXRS}"/>
+          <attribute name="Specification-Version"  value="${IMPL_VERSION}"/>
+          <attribute name="Specification-Vendor"   value="${IMPL_VENDOR}"/>
         </manifest>
       </osgiJar>
     </target> 
@@ -311,6 +320,9 @@ org.codehaus.jackson.mrbean;version=${IMPL_VERSION}"
           <attribute name="Implementation-Title"   value="${IMPL_TITLE_MRBEAN}"/>
           <attribute name="Implementation-Version" value="${IMPL_VERSION}"/>
           <attribute name="Implementation-Vendor"  value="${IMPL_VENDOR}"/>
+          <attribute name="Specification-Title"    value="${IMPL_TITLE_MRBEAN}"/>
+          <attribute name="Specification-Version"  value="${IMPL_VERSION}"/>
+          <attribute name="Specification-Vendor"   value="${IMPL_VENDOR}"/>
         </manifest>
       </osgiJar>
     </target> 
@@ -366,6 +378,9 @@ org.codehaus.jackson.xc;version='${IMPL_VERSION}'
           <attribute name="Implementation-Title"   value="${IMPL_TITLE_XC}"/>
           <attribute name="Implementation-Version" value="${IMPL_VERSION}"/>
           <attribute name="Implementation-Vendor"  value="${IMPL_VENDOR}"/>
+          <attribute name="Specification-Title"    value="${IMPL_TITLE_XC}"/>
+          <attribute name="Specification-Version"  value="${IMPL_VERSION}"/>
+          <attribute name="Specification-Vendor"   value="${IMPL_VENDOR}"/>
         </manifest>
       </osgiJar>
     </target> 
@@ -400,6 +415,9 @@ org.codehaus.jackson.smile;version=${IMPL_VERSION}"
           <attribute name="Implementation-Title"   value="${IMPL_TITLE_SMILE}"/>
           <attribute name="Implementation-Version" value="${IMPL_VERSION}"/>
           <attribute name="Implementation-Vendor"  value="${IMPL_VENDOR}"/>
+          <attribute name="Specification-Title"    value="${IMPL_TITLE_SMILE}"/>
+          <attribute name="Specification-Version"  value="${IMPL_VERSION}"/>
+          <attribute name="Specification-Vendor"   value="${IMPL_VENDOR}"/>
         </manifest>
       </osgiJar>
     </target> 
@@ -412,6 +430,9 @@ org.codehaus.jackson.smile;version=${IMPL_VERSION}"
             <attribute name="Implementation-Title"   value="Smile Tool"/>
             <attribute name="Implementation-Version" value="${IMPL_VERSION}"/>
             <attribute name="Implementation-Vendor"  value="${IMPL_VENDOR}"/>
+            <attribute name="Specification-Title"    value="Smile Tool"/>
+            <attribute name="Specification-Version"  value="${IMPL_VERSION}"/>
+            <attribute name="Specification-Vendor"   value="${IMPL_VENDOR}"/>
             <attribute name="Main-Class"  value="org.codehaus.jackson.smile.Tool"/>
         </manifest>
       	<!-- need everything from core, smile packages, but nothing else -->
