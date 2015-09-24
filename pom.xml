@@ -40,6 +40,7 @@
     <version.org.apache.ant>1.8.2</version.org.apache.ant>
     <version.org.codehaus.groovy>1.7.4</version.org.codehaus.groovy>
     <version.com.google.collections>1.0</version.com.google.collections>
+    <version.com.googlecode.jarjar>1.1</version.com.googlecode.jarjar>
     <version.org.jboss.spec.javax.ws.rs>1.0.1.Final</version.org.jboss.spec.javax.ws.rs>
     <version.jsr311-api>1.1</version.jsr311-api>
     <version.joda-time>1.5.2</version.joda-time>
@@ -159,6 +160,13 @@
                   <artifactId>google-collections</artifactId>
                   <version>${version.com.google.collections}</version>
                   <outputDirectory>${project.basedir}/lib/ext/google</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>com.googlecode.jarjar</groupId>
+                  <artifactId>jarjar</artifactId>
+                  <version>${version.com.googlecode.jarjar}</version>
+                  <destFileName>jarjar-1.0.jar</destFileName>
+                  <outputDirectory>${project.basedir}/lib/ext/jarjar</outputDirectory>
                 </artifactItem>
                 <artifactItem>
                   <groupId>org.jboss.spec.javax.ws.rs</groupId>
