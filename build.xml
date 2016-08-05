@@ -435,13 +435,30 @@ compile.smile, compile.mrbean" />
          -->
        <jar destfile="${dir.dist}/jackson-core-asl-${IMPL_VERSION}-sources.jar"
           filesonly="true" compress="true" basedir="${dir.src.java.core}"
-          includes="org/codehaus/jackson/**"
-       />
+          includes="org/codehaus/jackson/**">
+           <manifest>
+             <attribute name="Built-By" value="${user.name}"/>
+             <attribute name="Implementation-Title"   value="${IMPL_TITLE_CORE}"/>
+             <attribute name="Implementation-Version" value="${IMPL_VERSION}"/>
+             <attribute name="Implementation-Vendor"  value="${IMPL_VENDOR}"/>
+             <attribute name="Specification-Title"   value="${JSON_TITLE}"/>
+             <attribute name="Specification-Version" value="${JSON_VERSION}"/>
+             <attribute name="Specification-Vendor"  value="${JSON_VENDOR}"/>
+           </manifest> 
+       </jar>  
        <jar destfile="${dir.dist}/jackson-mapper-asl-${IMPL_VERSION}-sources.jar"
           filesonly="true" compress="true" basedir="${dir.src.java.mapper}"
-          includes="org/codehaus/jackson/**"
-       />
-
+          includes="org/codehaus/jackson/**">
+           <manifest>
+             <attribute name="Built-By" value="${user.name}"/>
+             <attribute name="Implementation-Title"   value="${IMPL_TITLE_MAPPER}"/>
+             <attribute name="Implementation-Version" value="${IMPL_VERSION}"/>
+             <attribute name="Implementation-Vendor"  value="${IMPL_VENDOR}"/>
+             <attribute name="Specification-Title"    value="${IMPL_TITLE_MAPPER}"/>
+             <attribute name="Specification-Version"  value="${IMPL_VERSION}"/>
+             <attribute name="Specification-Vendor"   value="${IMPL_VENDOR}"/>
+           </manifest>
+       </jar> 
        <jar destfile="${dir.dist}/jackson-core-lgpl-${IMPL_VERSION}-sources.jar"
           filesonly="true" compress="true" basedir="${dir.src.java.core}"
           includes="org/codehaus/jackson/**"
@@ -452,12 +469,30 @@ compile.smile, compile.mrbean" />
        />
        <jar destfile="${dir.dist}/jackson-jaxrs-${IMPL_VERSION}-sources.jar"
           filesonly="true" compress="true" basedir="${dir.src.java.jaxrs}"
-          includes="org/codehaus/jackson/jaxrs/**"
-       />
+          includes="org/codehaus/jackson/jaxrs/**">
+           <manifest>
+             <attribute name="Built-By" value="${user.name}"/>
+             <attribute name="Implementation-Title"   value="${IMPL_TITLE_JAXRS}"/>
+             <attribute name="Implementation-Version" value="${IMPL_VERSION}"/>
+             <attribute name="Implementation-Vendor"  value="${IMPL_VENDOR}"/>
+             <attribute name="Specification-Title"    value="${IMPL_TITLE_JAXRS}"/>
+             <attribute name="Specification-Version"  value="${IMPL_VERSION}"/>
+             <attribute name="Specification-Vendor"   value="${IMPL_VENDOR}"/>
+           </manifest>
+       </jar>
        <jar destfile="${dir.dist}/jackson-xc-${IMPL_VERSION}-sources.jar"
           filesonly="true" compress="true" basedir="${dir.src.java.xc}"
-          includes="org/codehaus/jackson/xc/**"
-       />
+          includes="org/codehaus/jackson/xc/**">
+           <manifest>
+             <attribute name="Built-By" value="${user.name}"/>
+             <attribute name="Implementation-Title"   value="${IMPL_TITLE_XC}"/>
+             <attribute name="Implementation-Version" value="${IMPL_VERSION}"/>
+             <attribute name="Implementation-Vendor"  value="${IMPL_VENDOR}"/>
+             <attribute name="Specification-Title"    value="${IMPL_TITLE_XC}"/>
+             <attribute name="Specification-Version"  value="${IMPL_VERSION}"/>
+             <attribute name="Specification-Vendor"   value="${IMPL_VENDOR}"/>
+           </manifest>
+       </jar>   
        <jar destfile="${dir.dist}/jackson-smile-${IMPL_VERSION}-sources.jar"
           filesonly="true" compress="true" basedir="${dir.src.java.smile}"
           includes="org/codehaus/jackson/smile/**"
