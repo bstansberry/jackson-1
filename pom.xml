@@ -10,7 +10,7 @@
 
   <groupId>org.codehaus.jackson</groupId>
   <artifactId>jackson-project</artifactId>
-  <version>1.9.13</version>
+  <version>1.9.13.jbossorg-00001-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Jackson Project</name>
