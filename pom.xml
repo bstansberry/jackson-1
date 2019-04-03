@@ -299,112 +299,104 @@
         <inherited>false</inherited>
       </plugin>
       <plugin>
-        <artifactId>maven-deploy-plugin</artifactId>
+        <artifactId>maven-install-plugin</artifactId>
         <executions>
           <execution>
-            <id>deploy-jackson-core-asl</id>
-            <phase>deploy</phase>
+            <id>install-jackson-core-asl</id>
+            <phase>install</phase>
             <goals>
-              <goal>deploy-file</goal>
+              <goal>install-file</goal>
             </goals>
             <configuration>
               <file>${project.basedir}/dist/jackson-core-asl-${project.version}.jar</file>
               <javadoc>${project.basedir}/dist/jackson-core-asl-${project.version}-javadoc.jar</javadoc>
               <sources>${project.basedir}/dist/jackson-core-asl-${project.version}-sources.jar</sources>
               <pomFile>${project.basedir}/dist/jackson-core-asl-${project.version}.pom</pomFile>
-              <url>${maven.deploy.url}</url>
             </configuration>
           </execution>
           <execution>
-            <id>deploy-jackson-core-lgpl</id>
-            <phase>deploy</phase>
+            <id>install-jackson-core-lgpl</id>
+            <phase>install</phase>
             <goals>
-              <goal>deploy-file</goal>
+              <goal>install-file</goal>
             </goals>
             <configuration>
               <file>${project.basedir}/dist/jackson-core-lgpl-${project.version}.jar</file>
               <sources>${project.basedir}/dist/jackson-core-lgpl-${project.version}-sources.jar</sources>
               <pomFile>${project.basedir}/dist/jackson-core-lgpl-${project.version}.pom</pomFile>
-              <url>${maven.deploy.url}</url>
             </configuration>
           </execution>
           <execution>
-            <id>deploy-jackson-jaxrs</id>
-            <phase>deploy</phase>
+            <id>install-jackson-jaxrs</id>
+            <phase>install</phase>
             <goals>
-              <goal>deploy-file</goal>
+              <goal>install-file</goal>
             </goals>
             <configuration>
               <file>${project.basedir}/dist/jackson-jaxrs-${project.version}.jar</file>
               <sources>${project.basedir}/dist/jackson-jaxrs-${project.version}-sources.jar</sources>
               <pomFile>${project.basedir}/dist/jackson-jaxrs-${project.version}.pom</pomFile>
-              <url>${maven.deploy.url}</url>
             </configuration>
           </execution>
           <execution>
-            <id>deploy-jackson-mapper-asl</id>
-            <phase>deploy</phase>
+            <id>install-jackson-mapper-asl</id>
+            <phase>install</phase>
             <goals>
-              <goal>deploy-file</goal>
+              <goal>install-file</goal>
             </goals>
             <configuration>
               <file>${project.basedir}/dist/jackson-mapper-asl-${project.version}.jar</file>
               <javadoc>${project.basedir}/dist/jackson-mapper-asl-${project.version}-javadoc.jar</javadoc>
               <sources>${project.basedir}/dist/jackson-mapper-asl-${project.version}-sources.jar</sources>
               <pomFile>${project.basedir}/dist/jackson-mapper-asl-${project.version}.pom</pomFile>
-              <url>${maven.deploy.url}</url>
             </configuration>
           </execution>
           <execution>
-            <id>deploy-jackson-mapper-lgpl</id>
-            <phase>deploy</phase>
+            <id>install-jackson-mapper-lgpl</id>
+            <phase>install</phase>
             <goals>
-              <goal>deploy-file</goal>
+              <goal>install-file</goal>
             </goals>
             <configuration>
               <file>${project.basedir}/dist/jackson-mapper-lgpl-${project.version}.jar</file>
               <sources>${project.basedir}/dist/jackson-mapper-lgpl-${project.version}-sources.jar</sources>
               <pomFile>${project.basedir}/dist/jackson-mapper-lgpl-${project.version}.pom</pomFile>
-              <url>${maven.deploy.url}</url>
             </configuration>
           </execution>
           <execution>
-            <id>deploy-jackson-mrbean</id>
-            <phase>deploy</phase>
+            <id>install-jackson-mrbean</id>
+            <phase>install</phase>
             <goals>
-              <goal>deploy-file</goal>
+              <goal>install-file</goal>
             </goals>
             <configuration>
               <file>${project.basedir}/dist/jackson-mrbean-${project.version}.jar</file>
               <sources>${project.basedir}/dist/jackson-mrbean-${project.version}-sources.jar</sources>
               <pomFile>${project.basedir}/dist/jackson-mrbean-${project.version}.pom</pomFile>
-              <url>${maven.deploy.url}</url>
             </configuration>
           </execution>
           <execution>
-            <id>deploy-jackson-smile</id>
-            <phase>deploy</phase>
+            <id>install-jackson-smile</id>
+            <phase>install</phase>
             <goals>
-              <goal>deploy-file</goal>
+              <goal>install-file</goal>
             </goals>
             <configuration>
               <file>${project.basedir}/dist/jackson-smile-${project.version}.jar</file>
               <sources>${project.basedir}/dist/jackson-smile-${project.version}-sources.jar</sources>
               <pomFile>${project.basedir}/dist/jackson-smile-${project.version}.pom</pomFile>
-              <url>${maven.deploy.url}</url>
             </configuration>
           </execution>
           <execution>
-            <id>deploy-jackson-xc</id>
-            <phase>deploy</phase>
+            <id>install-jackson-xc</id>
+            <phase>install</phase>
             <goals>
-              <goal>deploy-file</goal>
+              <goal>install-file</goal>
             </goals>
             <configuration>
               <file>${project.basedir}/dist/jackson-xc-${project.version}.jar</file>
               <sources>${project.basedir}/dist/jackson-xc-${project.version}-sources.jar</sources>
               <pomFile>${project.basedir}/dist/jackson-xc-${project.version}.pom</pomFile>
-              <url>${maven.deploy.url}</url>
             </configuration>
           </execution>
         </executions>
@@ -412,6 +404,120 @@
           <skip>false</skip>
         </configuration>
       </plugin>
+	  <plugin>
+	    <artifactId>maven-deploy-plugin</artifactId>
+	    <executions>
+          <execution>
+	        <id>deploy-jackson-core-asl</id>
+	        <phase>deploy</phase>
+	        <goals>
+	          <goal>deploy-file</goal>
+	        </goals>
+	        <configuration>
+	          <file>${project.basedir}/dist/jackson-core-asl-${project.version}.jar</file>
+	          <javadoc>${project.basedir}/dist/jackson-core-asl-${project.version}-javadoc.jar</javadoc>
+	          <sources>${project.basedir}/dist/jackson-core-asl-${project.version}-sources.jar</sources>
+	          <pomFile>${project.basedir}/dist/jackson-core-asl-${project.version}.pom</pomFile>
+	          <url>${maven.deploy.url}</url>
+            </configuration>
+	      </execution>
+	      <execution>
+	        <id>deploy-jackson-core-lgpl</id>
+	        <phase>deploy</phase>
+	        <goals>
+	          <goal>deploy-file</goal>
+	        </goals>
+	        <configuration>
+	          <file>${project.basedir}/dist/jackson-core-lgpl-${project.version}.jar</file>
+	          <sources>${project.basedir}/dist/jackson-core-lgpl-${project.version}-sources.jar</sources>
+	          <pomFile>${project.basedir}/dist/jackson-core-lgpl-${project.version}.pom</pomFile>
+	          <url>${maven.deploy.url}</url>
+	        </configuration>
+	      </execution>
+	      <execution>
+	        <id>deploy-jackson-jaxrs</id>
+	        <phase>deploy</phase>
+	        <goals>
+	          <goal>deploy-file</goal>
+	        </goals>
+	        <configuration>
+	          <file>${project.basedir}/dist/jackson-jaxrs-${project.version}.jar</file>
+	          <sources>${project.basedir}/dist/jackson-jaxrs-${project.version}-sources.jar</sources>
+	          <pomFile>${project.basedir}/dist/jackson-jaxrs-${project.version}.pom</pomFile>
+	          <url>${maven.deploy.url}</url>
+	        </configuration>
+	      </execution>
+	      <execution>
+	        <id>deploy-jackson-mapper-asl</id>
+	        <phase>deploy</phase>
+	        <goals>
+	          <goal>deploy-file</goal>
+	        </goals>
+	        <configuration>
+	          <file>${project.basedir}/dist/jackson-mapper-asl-${project.version}.jar</file>
+	          <javadoc>${project.basedir}/dist/jackson-mapper-asl-${project.version}-javadoc.jar</javadoc>
+	          <sources>${project.basedir}/dist/jackson-mapper-asl-${project.version}-sources.jar</sources>
+	          <pomFile>${project.basedir}/dist/jackson-mapper-asl-${project.version}.pom</pomFile>
+	          <url>${maven.deploy.url}</url>
+	        </configuration>
+	      </execution>
+	      <execution>
+	        <id>deploy-jackson-mapper-lgpl</id>
+	        <phase>deploy</phase>
+	        <goals>
+	          <goal>deploy-file</goal>
+	        </goals>
+	        <configuration>
+	          <file>${project.basedir}/dist/jackson-mapper-lgpl-${project.version}.jar</file>
+	          <sources>${project.basedir}/dist/jackson-mapper-lgpl-${project.version}-sources.jar</sources>
+	          <pomFile>${project.basedir}/dist/jackson-mapper-lgpl-${project.version}.pom</pomFile>
+	          <url>${maven.deploy.url}</url>
+	        </configuration>
+	      </execution>
+	      <execution>
+	        <id>deploy-jackson-mrbean</id>
+	        <phase>deploy</phase>
+	        <goals>
+	          <goal>deploy-file</goal>
+	        </goals>
+	        <configuration>
+	          <file>${project.basedir}/dist/jackson-mrbean-${project.version}.jar</file>
+	          <sources>${project.basedir}/dist/jackson-mrbean-${project.version}-sources.jar</sources>
+	          <pomFile>${project.basedir}/dist/jackson-mrbean-${project.version}.pom</pomFile>
+	          <url>${maven.deploy.url}</url>
+	        </configuration>
+	      </execution>
+	      <execution>
+	        <id>deploy-jackson-smile</id>
+	        <phase>deploy</phase>
+	        <goals>
+	          <goal>deploy-file</goal>
+	        </goals>
+	        <configuration>
+	          <file>${project.basedir}/dist/jackson-smile-${project.version}.jar</file>
+	          <sources>${project.basedir}/dist/jackson-smile-${project.version}-sources.jar</sources>
+	          <pomFile>${project.basedir}/dist/jackson-smile-${project.version}.pom</pomFile>
+	          <url>${maven.deploy.url}</url>
+	        </configuration>
+	      </execution>
+	      <execution>
+	        <id>deploy-jackson-xc</id>
+	        <phase>deploy</phase>
+	        <goals>
+	          <goal>deploy-file</goal>
+	        </goals>
+	        <configuration>
+	          <file>${project.basedir}/dist/jackson-xc-${project.version}.jar</file>
+	          <sources>${project.basedir}/dist/jackson-xc-${project.version}-sources.jar</sources>
+	          <pomFile>${project.basedir}/dist/jackson-xc-${project.version}.pom</pomFile>
+		      <url>${maven.deploy.url}</url>
+	        </configuration>
+	      </execution>
+        </executions>
+	    <configuration>
+	      <skip>false</skip>
+	    </configuration>
+	  </plugin>
     </plugins>
   </build>
 </project>
